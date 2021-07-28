@@ -77,7 +77,7 @@ def jokes():
 
 
 #for articles
-@app.route('/riddles.html')
+@app.route('/articles.html')
 def articles():
    return render_template('articles.html')
 
