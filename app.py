@@ -133,11 +133,91 @@ def game8():
 def game9():
    return render_template('9.html')
 
+@app.route("/b1.html")
+def b1():
+   return render_template("b1.html")
+
+@app.route("/b2.html")
+def b2():
+   return render_template("b2.html")
+
+@app.route("/b3.html")
+def b3():
+   return render_template("b3.html")
+
+@app.route("/health1.html")
+def health1():
+   return render_template("health1.html")
+
+@app.route("/health2.html")
+def health2():
+   return render_template("health2.html")
+
+@app.route("/health3.html")
+def health3():
+   return render_template("health3.html")
+
+@app.route("/arts1.html")
+def arts1():
+   return render_template("arts1.html")
+
+@app.route("/arts2.html")
+def arts2():
+   return render_template("arts2.html")
+
+@app.route("/arts3.html")
+def arts3():
+   return render_template("arts3.html")
+
+@app.route("/science1.html")
+def science1():
+   return render_template("science1.html")
+
+@app.route("/science2.html")
+def science2():
+   return render_template("science2.html")
+
+@app.route("/science3.html")
+def science3():
+   return render_template("science3.html")
+
+@app.route("/self_improvement1.html")
+def self_improvement1():
+   return render_template("self_improvement1.html")
+
+@app.route("/self_improvement2.html")
+def self_improvement2():
+   return render_template("self_improvement2.html")
+
+@app.route("/self_improvement3.html")
+def self_improvement3():
+   return render_template("self_improvement3.html")
+
+@app.route("/society1.html")
+def societ1():
+   return render_template("society1.html")
+
+@app.route("/society2.html")
+def societ2():
+   return render_template("society2.html")
+
+@app.route("/society3.html")
+def societ3():
+   return render_template("society3.html")
+
+
 @app.route('/admin@1907')
 def admin():
    all_posts=Donation.query.order_by(Donation.date_posted).all()
+   all_posts.reverse()
    return render_template('admin.html',posts=all_posts)
 
+@app.route('/delete/<int:id>',methods=['GET','POST'])
+def delete(id):
+   post = Donation.query.get_or_404(id)
+   db.session.delete(post)
+   db.session.commit()
+   return redirect('/admin@1907')
 
 if __name__ == "__main__" :
    app.run()

@@ -10,23 +10,24 @@
     {% for post in posts %}
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{post.id}}"
+                aria-expanded="true" aria-controls="collapse{{post.id}}">
                 {{ post.fname}}  {{post.lname}}
-                <!-- <button type="button" class="btn btn-warning"><a href="/posts/delete/{{post.id}}">Delete</a></button> -->
             </button>
-
+            
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <p>{{ post.email }} </p>
-                <p>{{ post.city }} </p>
-                <p>{{ post.number }} </p>
-                <p>{{ post.state }} </p>
-                <p>{{ post.pincode }} </p>
-                <p>{{ post.address }} </p>
-                <p>{{ post.items }} </p>
+        <div id="collapse{{post.id}}" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p>{{ post.email }} </p>
+            <p>{{ post.city }} </p>
+            <p>{{ post.number }} </p>
+            <p>{{ post.state }} </p>
+            <p>{{ post.pincode }} </p>
+            <p>{{ post.address }} </p>
+            <p>{{ post.items }} </p>
+            <a class="btn btn-dark" href="/delete/{{post.id}}" role="button">Delete</a>
+            <!-- <button type="button" class="btn btn-warning"><a href="/delete/{{post.id}}">Delete</a></button> -->
             </div>
         </div>
     </div>
