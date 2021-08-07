@@ -7,14 +7,26 @@
 {% block body %}
 <main>
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-     <div class="col-md-5 p-lg-5 mx-auto my-5">
-         <h1 class="display-4 fw-normal">Funny Jokes</h1>
-     <div id="jokes2">FUN FACT: I am a picky eater and dislike most vegetables, especially mushrooms. One time a friend tried to sneak mushrooms onto my pizza. Needless to say, I no longer trust her around my food.</div>
-         <br>
-         <button onclick="newQuote2()" type="button" class="btn btn-warning btn-lg" > More</button>
-         <script src="jokes2.js"></script>
-     </div>
-   </div>
- </main>
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 fw-normal">Funny Jokes</h1>
+            <div id="jokes2">Why can’t you trust atoms? They make up everything.
+            </div>
+            <br>
+            <button onclick="newQuote2()" type="button" class="btn btn-warning btn-lg"> More</button>
+            <script>
+                var quotes = [
+                    'What sits at the bottom of the sea and twitches? A nervous wreck.',
+                    'What do you call a dinosaur that crashes his car? Tyrannosaurus Wrecks.',
+                    'What do you call a guy who never farts in public? A private tutor.',
+                    'What’s the best thing about Switzerland? I don’t know, but the flag is a big plus.',
+                    'What washes up on really small beaches? Micro-waves.'
+                ]
+                function newQuote2() {
+                    var randomNumber = Math.floor(Math.random() * (quotes.length));
+                    document.getElementById('jokes2').innerHTML = quotes[randomNumber];
+                }
+            </script>
+        </div>
+    </div>
+</main>
 {% endblock %}
-

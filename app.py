@@ -16,10 +16,13 @@ class Donation(db.Model):
    state = db.Column(db.String(100) , nullable = False)
    pincode = db.Column(db.INTEGER() , nullable = False)
    address = db.Column(db.String(100) , nullable = False)
+   items = db.Column(db.String(500) , nullable = False)
    date_posted = db.Column(db.DateTime ,nullable=False,default=datetime.utcnow)
 
    def __repr__(self):
       return 'Donation '+str(self.id)
+
+db.create_all()
 
 #for index
 @app.route('/')
@@ -27,7 +30,7 @@ def index():
    return render_template('index.html')
 
 #for direct
-@app.route('/direct.html')
+@app.route('/direct.html', methods=['GET','POST'])
 def direct():
    if request.method=='POST':
       post_fname = request.form['fname']
@@ -38,13 +41,16 @@ def direct():
       post_state = request.form['state']
       post_pincode = request.form['pincode']
       post_address = request.form['address']
-      new_post =Donation(fname=post_fname,lname=post_lname,email=post_email,city=post_city,number=post_number,state=post_state,pincode=post_pincode,address=post_address)
+      post_items = request.form['items']
+      new_post =Donation(fname=post_fname,lname=post_lname,email=post_email,city=post_city,number=post_number,state=post_state,pincode=post_pincode,address=post_address,items=post_items)
       db.session.add(new_post)
       db.session.commit()
-      return redirect('/')
+      return redirect('/direct.html')
    else:
       # return render_template('posts.html',posts=all_posts)
       return render_template('direct.html')
+
+
 #for indirect
 @app.route('/indirect.html')
 def indirect():
@@ -126,6 +132,11 @@ def game8():
 @app.route('/9.html')
 def game9():
    return render_template('9.html')
+
+@app.route('/admin@1907')
+def admin():
+   all_posts=Donation.query.order_by(Donation.date_posted).all()
+   return render_template('admin.html',posts=all_posts)
 
 
 if __name__ == "__main__" :

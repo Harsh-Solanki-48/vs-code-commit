@@ -11,7 +11,7 @@
 
 <div class="container my-4">
 
-    <form class="row g-3 needs-validation" novalidate action="/" method='POST'>
+    <form class="row g-3 needs-validation" action="/direct.html" method='POST'>
         <div class="col-md-4">
             <label for="validationCustom01" class="form-label">First name</label>
             <input type="text" class="form-control" placeholder="First Name" required name='fname' id='fname'>
@@ -75,24 +75,13 @@
         </div>
 
         <div class="mb-3">
-            <label for="formFileMultiple" class="form-label">Upload photos of Items</label>
-            <input class="form-control" type="file" id="formFileMultiple" multiple>
+            <label for="exampleFormControlTextarea1" class="form-label"> Write down items to be donated</label>
+            <textarea class="form-control" name='items' id='items' rows="3"></textarea>
         </div>
-
-        <!-- <div class="col-12">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                    Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
-            </div>
-        </div> -->
-
-        <div class="col-12">
-            <button class="btn btn-primary" type="submit" value="post">Submit form</button>
+        
+        <div class="col-12" align="center">
+            <!-- <input type ='submit' value="post"> -->
+            <input class="btn btn-primary" type="submit" value="SUBMIT">
         </div>
     </form>
 

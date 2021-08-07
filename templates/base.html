@@ -13,7 +13,7 @@
     <script data-ad-client="ca-pub-2348207341932158" async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2348207341932158"
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2348207341932158"
         crossorigin="anonymous"></script>
 
     {% block head %}
@@ -23,46 +23,42 @@
 
 <body>
 
-    <div class="container">
-        <div class="container-fluid">
-            <div class="container">
-                <ul class="nav justify-content-center">
+    <div class="container-fluid">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="navbar-brand nav justify-content-center" href="/">GRACIOUS GIVERS</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="navbar-brand nav justify-content-center" href="/">GRACIOUS GIVERS</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/direct.html">Direct Donations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Indirect Donations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/articles.html">Read an Article</a></li>
+                            <li><a class="dropdown-item" href="/games.html">Play a Game</a></li>
+                            <li><a class="dropdown-item" href="/frj.html">Riddles and jokes</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/direct.html">Direct Donations</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Indirect Donations
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/articles.html">Read an Article</a></li>
-                                <li><a class="dropdown-item" href="/games.html">Play a Game</a></li>
-                                <li><a class="dropdown-item" href="/frj.html">Riddles and jokes</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">About Us</a>
-                        </li>
-                    </ul>
-            </nav>
-        </div>
+        </nav>
     </div>
 
     {% block body %}
