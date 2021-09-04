@@ -1,38 +1,103 @@
-{% extends 'base.html' %}
 
-{% block head %}
-<title>Gracious Givers</title>
-{% endblock %}
+<!doctype html>
+<html lang="en">
 
-{% block body %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h1>Decoding Book Resurrects the Ancient Astronaut Theme</h1>
-<div style='font-style: italic'>By: <a href='http://www.articlegeek.com/authors/1163.php'>Gersiane De Brito</a></div><p>
-Several decades ago, books by insurance salesman Erich von Daniken caused an international sensation as he depicted photographs of large-stone edifices hard to believe built by primitive humans. His dreams of ancient astronauts, however, soon faded into oblivion as archeologists came up with proof that primitive humans could have constructed the pyramids and like structures without alien assistance. Nonetheless, the possibility of other types of evidence for ancient astronauts cannot be discarded. <br />
-<br />
-Overtly a cryptography and deception tactics book, Morten St. George's Incantation of the Law Against Inept Critics: A Guide to Cryptic Thinking takes up the ancient astronaut gauntlet. But there's no stone here. Now, it's not a question of what the ancient astronauts did, but of what they left behind. Deception cryptography leads the way. The only known deployment of this unique form of cryptography is to be found in forty two prophetic stanzas published by Nostradamus in the 16th century. So was Nostradamus an alien? Hardly, but St. George's book asserts he was the last guardian of an alien artifact. <br />
-<br />
-<b>What's the evidence?</b><br />
-<br />
-First, a breakthrough decoding of the forty two stanzas in which numerous contemporary events are not only accurately recounted but also systematically dated. St. George concludes there is no longer any doubt about whether or not the future was foreseen. It was, and likewise we are witnessing the powers of a super-civilization. <br />
-<br />
-Second, the discovery that the forty two stanzas (perceived as a book of divine revelation) were secretly guarded, known to, and commented upon by a cabalistic sect during medieval times. St. George says these forty-two revelations predate Nostradamus by centuries, and now there is a "book of light" in the picture, not "light" like in "enlightenment" but literally composed of light, black fire on top of white fire. This describes the artifact that survived to reach Nostradamus. <br />
-<br />
-Third, back to the prophecies, which come forth and tell us the name of their author and when they were written. According to St. George, they were written in the sixth century, a thousand years before the time of Nostradamus. <br />
-<br />
-Why is there no record of alien arrival in the sixth century? St. George responded we are referring to creatures with two arm appendages and four fingers at the end of each, but other than that, they landed as helmeted aquatics and didn't remotely look like humans. He says it is a myth that intelligent aliens have to be hominoids, and it is likewise a myth that the only road to technology is the road taken by humans. "In the Dark Ages, these aquatics would have been stoned as demons in most places, and if there were any reference to them, religious censorship would have obliterated it." <br />
-<br />
-Then, how do you know that they had four fingers? St. George replied, "I said they would have been stoned as demons in most places, not in all places. Archaeologists are far from perfect. They have no idea how to distinguish the drawing of an aquatic extraterrestrial from the drawing of a masked witchdoctor. Maybe some of them had suspicions but didn't speak out, fearing for their career or whatever. Extraterrestrial intelligence and civilizations more advanced than ours are terrifying concepts for segments of human society." <br />
-<br />
-There are many unsolved mysteries in world history. Is this another one? St. George emphatically asserts: "No!  These extraterrestrials were no fools. Besides who and when, the prophecies also tell us where, that is, where they came from." He says the prophecies provide data for a star arrow rising upwards from southern skies and for a planetary arrow moving outwards from the solar system, and where these arrows collide would be the point of contact. <br />
-<br />
-Then there will be contact? St. George has no doubts about the matter: "Yes. My unsophisticated astronomy software can only provide approximate coordinates, but one day astronomers will work out the precise coordinates and point a radio telescope there, and there will be contact. To provide us with coordinates and not allow contact would be deceitful, and they have no reason to be deceitful on this. Else, why bother to interfere with us at all?"
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-<p>
-<strong>Author Bio</strong><br>
-By Gersiane De Brito with special thanks to Morten St. George and the <a target='_blank' href=http://www.crypticthinking.com/>www.crypticthinking.com</a> website.  Look for follow-up article called "Aliens: Where SETI Astronomers Can Find Them."
-<br>
-<p>
-<em>Article Source: <a href='http://www.articlegeek.com'>http://www.ArticleGeek.com - Free Website Content</a></em>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2983464111332563"
+     crossorigin="anonymous"></script>
 
-{% endblock %}
+        <title>Gracious Givers</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="navbar-brand nav justify-content-center" href="/">GRACIOUS GIVERS</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/direct.html">Direct Donations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Indirect Donations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/articles.html">Read an Article</a></li>
+                            <li><a class="dropdown-item" href="/games.html">Play a Game</a></li>
+                            <li><a class="dropdown-item" href="/frj.html">Riddles and jokes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <h1>Decoding Book Resurrects the Ancient Astronaut Theme</h1>
+    <div style='font-style: italic'>By: <a href='http://www.articlegeek.com/authors/1163.php'>Gersiane De Brito</a></div><p>
+    Several decades ago, books by insurance salesman Erich von Daniken caused an international sensation as he depicted photographs of large-stone edifices hard to believe built by primitive humans. His dreams of ancient astronauts, however, soon faded into oblivion as archeologists came up with proof that primitive humans could have constructed the pyramids and like structures without alien assistance. Nonetheless, the possibility of other types of evidence for ancient astronauts cannot be discarded. <br />
+    <br />
+    Overtly a cryptography and deception tactics book, Morten St. George's Incantation of the Law Against Inept Critics: A Guide to Cryptic Thinking takes up the ancient astronaut gauntlet. But there's no stone here. Now, it's not a question of what the ancient astronauts did, but of what they left behind. Deception cryptography leads the way. The only known deployment of this unique form of cryptography is to be found in forty two prophetic stanzas published by Nostradamus in the 16th century. So was Nostradamus an alien? Hardly, but St. George's book asserts he was the last guardian of an alien artifact. <br />
+    <br />
+    <b>What's the evidence?</b><br />
+    <br />
+    First, a breakthrough decoding of the forty two stanzas in which numerous contemporary events are not only accurately recounted but also systematically dated. St. George concludes there is no longer any doubt about whether or not the future was foreseen. It was, and likewise we are witnessing the powers of a super-civilization. <br />
+    <br />
+    Second, the discovery that the forty two stanzas (perceived as a book of divine revelation) were secretly guarded, known to, and commented upon by a cabalistic sect during medieval times. St. George says these forty-two revelations predate Nostradamus by centuries, and now there is a "book of light" in the picture, not "light" like in "enlightenment" but literally composed of light, black fire on top of white fire. This describes the artifact that survived to reach Nostradamus. <br />
+    <br />
+    Third, back to the prophecies, which come forth and tell us the name of their author and when they were written. According to St. George, they were written in the sixth century, a thousand years before the time of Nostradamus. <br />
+    <br />
+    Why is there no record of alien arrival in the sixth century? St. George responded we are referring to creatures with two arm appendages and four fingers at the end of each, but other than that, they landed as helmeted aquatics and didn't remotely look like humans. He says it is a myth that intelligent aliens have to be hominoids, and it is likewise a myth that the only road to technology is the road taken by humans. "In the Dark Ages, these aquatics would have been stoned as demons in most places, and if there were any reference to them, religious censorship would have obliterated it." <br />
+    <br />
+    Then, how do you know that they had four fingers? St. George replied, "I said they would have been stoned as demons in most places, not in all places. Archaeologists are far from perfect. They have no idea how to distinguish the drawing of an aquatic extraterrestrial from the drawing of a masked witchdoctor. Maybe some of them had suspicions but didn't speak out, fearing for their career or whatever. Extraterrestrial intelligence and civilizations more advanced than ours are terrifying concepts for segments of human society." <br />
+    <br />
+    There are many unsolved mysteries in world history. Is this another one? St. George emphatically asserts: "No!  These extraterrestrials were no fools. Besides who and when, the prophecies also tell us where, that is, where they came from." He says the prophecies provide data for a star arrow rising upwards from southern skies and for a planetary arrow moving outwards from the solar system, and where these arrows collide would be the point of contact. <br />
+    <br />
+    Then there will be contact? St. George has no doubts about the matter: "Yes. My unsophisticated astronomy software can only provide approximate coordinates, but one day astronomers will work out the precise coordinates and point a radio telescope there, and there will be contact. To provide us with coordinates and not allow contact would be deceitful, and they have no reason to be deceitful on this. Else, why bother to interfere with us at all?"
+    
+    <p>
+    <strong>Author Bio</strong><br>
+    By Gersiane De Brito with special thanks to Morten St. George and the <a target='_blank' href=http://www.crypticthinking.com/>www.crypticthinking.com</a> website.  Look for follow-up article called "Aliens: Where SETI Astronomers Can Find Them."
+    <br>
+    <p>
+    <em>Article Source: <a href='http://www.articlegeek.com'>http://www.ArticleGeek.com - Free Website Content</a></em>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

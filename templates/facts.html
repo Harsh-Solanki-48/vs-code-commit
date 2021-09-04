@@ -1,196 +1,258 @@
-{% extends 'base.html' %}
 
-{% block head %}
-<title>Facts</title>
-{% endblock %}
+<!doctype html>
+<html lang="en">
 
-{% block body %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2983464111332563"
+     crossorigin="anonymous"></script>
+
+        <title>Gracious Givers</title>
+</head>
 
 <body>
-  <main>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal">Random Fact</h1>
-        <div id="fact" style="height:  5rem;"> If you wanted to watch every video on YouTube, you have to watch 55 crore hours worth of videos
-          as of now. Minus what you have already watched.</div>
-        <br>
-        <button onclick="newQuote()" type="button" class="btn btn-warning btn-lg"> More</button>
-        <script>
-          var quotes = [
-            'McDonald’s once made bubblegum-flavored broccoli',
-            'Some fungi create zombies, then control their minds',
-            'Venus spins clockwise. It’s the only planet that does!',
-            'Wilma Rudolph (who set the world record in 1960 for 100, 200 and 4x100-meter relay) had polio, scarlet fever and pneumonia as a child, leading doctors to believe she’d never walk again.',
-            'Humans are the Only Animals That Enjoy Spicy Foods. They Are Also the Only Animals Whose Brains Shrink',
-            'Chewing Gum After a Meal Reduces Heartburn',
-            "Bees are able to detect bombs with their tongues. So when the bees' handler sees it extend its proboscis, they know they've got a bomb on their hands.",
-            "Tear ducts don't fully develop in infants until they are one to three months old, making it impossible for babies to shed actual tears.",
-            'The cigarette lighter was invented before the match stick.',
-            'The longest music performance began on 5th September 2001 in a church in Germany and will end in 2640',
-            "The Tanganyika laughter epidemic lasted for around 6 to 18 months. The laughter started in a village school in Tanzania (then Tanganyika) with 3 girls. In the end, it affected over a 1000 people. It also made some people cry, scream and faint before eventually dying out.",
-            "The small percentage of static you see on 'dead' TV channels is actually residual radiation from the Big Bang.",
-            "Due to shortage of metal, the Oscars were made of painted plaster during World War II.",
-            "There are more possible iterations in a game of chess than there are atoms in the known universe.",
-            "The China Highway 110 traffic jam lasted for more than 10 days. Cars moved at the speed of 0.6 miles per day."
-          ]
-          function newQuote() {
-            var randomNumber = Math.floor(Math.random() * (quotes.length));
-            document.getElementById('fact').innerHTML = quotes[randomNumber];
-          }
-        </script>
-      </div>
+    <div class="container-fluid">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="navbar-brand nav justify-content-center" href="/">GRACIOUS GIVERS</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/direct.html">Direct Donations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Indirect Donations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/articles.html">Read an Article</a></li>
+                            <li><a class="dropdown-item" href="/games.html">Play a Game</a></li>
+                            <li><a class="dropdown-item" href="/frj.html">Riddles and jokes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
+    <main>
 
-
-
-
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-5 " " align="center">
-      <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="width: 50%;" align="center">
-        <div class="my-3 py-3" align="center">
-          <h2 class="display-1">&nbsp&nbspAbout Science&nbsp&nbsp&nbsp</h2>
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">Random Fact</h1>
+          <div id="fact" style="height:  5rem;"> If you wanted to watch every video on YouTube, you have to watch 55 crore hours worth of videos
+            as of now. Minus what you have already watched.</div>
           <br>
-          <br>
-          <div id="sf" style="height:  5rem;">The only bird that can fly backwards is a hummingbird.</div>
-          <br>
-          <br>
-          <button onclick="newQuote1()" type="button" class="btn btn-warning btn-lg"> More</button>
+          <button onclick="newQuote()" type="button" class="btn btn-warning btn-lg"> More</button>
           <script>
-            var quotes1 = [
-              'A human organ that no-one knew about has been hiding in plain sight all this time. Called mesentery, it connects the intestine to the abdomen and is believed to perform important functions for the body ranging from helping the heart to aiding the immune system.',
-              'Pugs’ cute little flat faces are the result of a genetic mutation. Their features have been strongly linked to a gene variant called SMOC2',
-              'Lungs do more than help us breathe – a surprising discovery has found they also make blood. The organ, present in mammals, is believed to produce more than 10 million platelets (tiny blood cells) per hour.',
-              'Great apes, including chimpanzees and orangutans, have absolutely no appreciation of music whatsoever.',
-              'The Kepler-90 star system has as many planets as our own solar system, making us tied for the most planets revolving around a single star known so far.',
-              "Scientists may finally have an answer to why eggs come in different shapes and, apparently, it is all down to the bird’s flying ability.",
-              "Bees have been shown to understand the concept of zero. Scientists discovered this after training the insects to count shapes, following previous research that revealed they can count to four",
-              "There is enough DNA in the average person’s body to stretch from the sun to Pluto and back — 17 times.",
-              'Grasshoppers have ears in their bellies.',
-              'When Helium is cooled to almost absolute zero (-460°F or -273°C, the lowest temperature possible), it becomes a liquid with surprising properties: it flows against gravity and will start running up and over the lip of a glass container!',
-              "Hot water freezes faster than cold water. In certain conditions, hot water can freezes faster than cold water — a counter-intuitive phenomenon known as the Mpemba effect.",
-              "Sunsets on Mars are blue.",
-              "Launching things into space is wildly expensive. Business Insider determined that a 16-ounce bottle of water can cost anywhere between $9,100 to $43,180 to blast into space today.",
-              "The only bird that can fly backwards is a hummingbird.",
-              "The highest mountain known to humans is a mountain on the asteroid Vesta. The mountain on the asteroid is 3 times bigger than Mount Everest."
-            ]
-            function newQuote1() {
-              var randomNumber = Math.floor(Math.random() * (quotes1.length));
-              document.getElementById('sf').innerHTML = quotes1[randomNumber];
-            }
-          </script>
-        </div>
-      </div>
-
-
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden " style="width: 50% " >
-        <div class="my-3 p-3">
-          <h2 class="display-1">&nbsp&nbsp&nbsp&nbspAbout Food&nbsp&nbsp&nbsp</h2>
-          <br>
-          <br>
-          <div id="ff" style="height:  5rem;">Fruit-flavored snacks shine because of car wax.</div>
-          <br>
-          <br>
-          <button onclick="newQuote2()" type="button" class="btn btn-warning btn-lg"> More</button>
-          <script>
-            var quotes2 = [
+            var quotes = [
               'McDonald’s once made bubblegum-flavored broccoli',
-              'Bird’s Saliva Is Actually An Expensive Delicacy',
-              'Chewing Coffee Beans Can Help Eliminate Bad Breath',
-              'Chocolate Is As Healthy As Fruit',
-              'Ranch dressing is dyed.',
-              'One fast-food burger can have meat from 100 different cows.',
-              "Fruit-flavored snacks shine because of car wax."
-
-            ]
-            function newQuote2() {
-              var randomNumber = Math.floor(Math.random() * (quotes2.length));
-              document.getElementById('ff').innerHTML = quotes2[randomNumber];
-            }
-          </script>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-5 " align="center">
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 50% " align="center">
-        <div class="my-3 p-3">
-          <h2 class="display-1">&nbsp&nbspAbout Dreams&nbsp&nbsp</h2>
-          <br>
-          <br>
-          <div id="df" style="height:  5rem;"> You can’t read while dreaming, or tell the time.</div>
-          <br>
-          <br>
-          <button onclick="newQuote3()" type="button" class="btn btn-warning btn-lg"> More</button>
-          <script>
-            var quotes3 = [
-              'The majority of men tend to have all male characters in their dreams. However, when women dream, they have a more even mixture of males and females in their dreams.',
-              'As the brain problem solves during dreams it actually mimics the creative, waking thought process. For this reason, many artists are more likely to be stimulated by their dreams, and think with more creativity while awake.',
-              'Your mind is more active while you are dreaming than when you’re awake.',
-              'Blind people experience more sensory dreams.',
-              'Some people dream only in black and white. Age plays a factor in this phenomenon, as people 25 or younger say they almost never dream in black and white, while people 55 and older claim to dream in color about 75 percent of the time. ',
-              'The most common emotion experienced in dreams is anxiety, and negative emotions, in general, are much more common than positive ones.',
-              "While dreams are often heavily influenced by our personal experiences, researchers have found that certain dream themes are very common across different cultures.",
-              "You can’t read while dreaming, or tell the time.",
-              'Some inventions are inspired by dreams. The idea for Google -Larry Page, Alternating current generator -Tesla, DNA’s double helix spiral form -James Watson. Yes, all of these',
-              'There are some astounding cases where people actually dreamt about things which happened to them later, in the exact same ways they dreamed about. For example, Abraham Lincoln dreamt of His Assassination and many of the victims of 9/11 had dreams warning them about the catastrophe'
-
-            ]
-            function newQuote3() {
-              var randomNumber = Math.floor(Math.random() * (quotes3.length));
-              document.getElementById('df').innerHTML = quotes3[randomNumber];
-            }
-          </script>
-        </div>
-      </div>
-
-
-      <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden " style="width: 50% " align="center">
-        <div class="my-3 py-3">
-          <h2 class="display-1">&nbsp&nbsp&nbsp &nbspAbout Space&nbsp&nbsp&nbsp</h2>
-          <br>
-          <br>
-          <div id="ef" style="height:  5rem;">Neutron stars can spin 600 times per second.</div>
-          <br>
-          <br>
-          <button onclick="newQuote4()" type="button" class="btn btn-warning btn-lg"> More</button>
-          <script>
-            var quotes4 = [
-              'SPACE IS COMPLETELY SILENT. There is no atmosphere in space, which means that sound has no medium or way to travel to be heard.',
-              'THE HOTTEST PLANET IN OUR SOLAR SYSTEM IS 450° C',
+              'Some fungi create zombies, then control their minds',
               'Venus spins clockwise. It’s the only planet that does!',
-              'A FULL NASA SPACE SUIT COSTS $12,000,000.',
-              'The Sun is large enough that approximately 1.3 million Earths could fit inside (if squashed in) or if the Earths retained their spherical shape then 960,000 would fit.',
-              'There are about three trillion trees on Planet Earth, and between 100-400 billion stars, approximately, in the galaxy.',
-              "ONE DAY ON VENUS IS LONGER THAN ONE YEAR.",
-              "There’s a planet made of diamonds twice the size of earth The 'super earth' aka 55 Cancri e, is most likely covered in graphite and diamond.",
-              'An effect known as cold welding, if two pieces of the same metal material touch in space, they will be pulled together to form one object. ',
-              'Saturn’s less dense than water which means that if put in a very large bowl of water, it would float.',
-              "Neutron stars can spin 600 times per second."
-
+              'Wilma Rudolph (who set the world record in 1960 for 100, 200 and 4x100-meter relay) had polio, scarlet fever and pneumonia as a child, leading doctors to believe she’d never walk again.',
+              'Humans are the Only Animals That Enjoy Spicy Foods. They Are Also the Only Animals Whose Brains Shrink',
+              'Chewing Gum After a Meal Reduces Heartburn',
+              "Bees are able to detect bombs with their tongues. So when the bees' handler sees it extend its proboscis, they know they've got a bomb on their hands.",
+              "Tear ducts don't fully develop in infants until they are one to three months old, making it impossible for babies to shed actual tears.",
+              'The cigarette lighter was invented before the match stick.',
+              'The longest music performance began on 5th September 2001 in a church in Germany and will end in 2640',
+              "The Tanganyika laughter epidemic lasted for around 6 to 18 months. The laughter started in a village school in Tanzania (then Tanganyika) with 3 girls. In the end, it affected over a 1000 people. It also made some people cry, scream and faint before eventually dying out.",
+              "The small percentage of static you see on 'dead' TV channels is actually residual radiation from the Big Bang.",
+              "Due to shortage of metal, the Oscars were made of painted plaster during World War II.",
+              "There are more possible iterations in a game of chess than there are atoms in the known universe.",
+              "The China Highway 110 traffic jam lasted for more than 10 days. Cars moved at the speed of 0.6 miles per day."
             ]
-            function newQuote4() {
-              var randomNumber = Math.floor(Math.random() * (quotes4.length));
-              document.getElementById('ef').innerHTML = quotes4[randomNumber];
+            function newQuote() {
+              var randomNumber = Math.floor(Math.random() * (quotes.length));
+              document.getElementById('fact').innerHTML = quotes[randomNumber];
             }
           </script>
         </div>
       </div>
-    </div>
+  
+  
+  
+  
+  
+  
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-5 " " align="center">
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="width: 50%;" align="center">
+          <div class="my-3 py-3" align="center">
+            <h2 class="display-1">&nbsp&nbspAbout Science&nbsp&nbsp&nbsp</h2>
+            <br>
+            <br>
+            <div id="sf" style="height:  5rem;">The only bird that can fly backwards is a hummingbird.</div>
+            <br>
+            <br>
+            <button onclick="newQuote1()" type="button" class="btn btn-warning btn-lg"> More</button>
+            <script>
+              var quotes1 = [
+                'A human organ that no-one knew about has been hiding in plain sight all this time. Called mesentery, it connects the intestine to the abdomen and is believed to perform important functions for the body ranging from helping the heart to aiding the immune system.',
+                'Pugs’ cute little flat faces are the result of a genetic mutation. Their features have been strongly linked to a gene variant called SMOC2',
+                'Lungs do more than help us breathe – a surprising discovery has found they also make blood. The organ, present in mammals, is believed to produce more than 10 million platelets (tiny blood cells) per hour.',
+                'Great apes, including chimpanzees and orangutans, have absolutely no appreciation of music whatsoever.',
+                'The Kepler-90 star system has as many planets as our own solar system, making us tied for the most planets revolving around a single star known so far.',
+                "Scientists may finally have an answer to why eggs come in different shapes and, apparently, it is all down to the bird’s flying ability.",
+                "Bees have been shown to understand the concept of zero. Scientists discovered this after training the insects to count shapes, following previous research that revealed they can count to four",
+                "There is enough DNA in the average person’s body to stretch from the sun to Pluto and back — 17 times.",
+                'Grasshoppers have ears in their bellies.',
+                'When Helium is cooled to almost absolute zero (-460°F or -273°C, the lowest temperature possible), it becomes a liquid with surprising properties: it flows against gravity and will start running up and over the lip of a glass container!',
+                "Hot water freezes faster than cold water. In certain conditions, hot water can freezes faster than cold water — a counter-intuitive phenomenon known as the Mpemba effect.",
+                "Sunsets on Mars are blue.",
+                "Launching things into space is wildly expensive. Business Insider determined that a 16-ounce bottle of water can cost anywhere between $9,100 to $43,180 to blast into space today.",
+                "The only bird that can fly backwards is a hummingbird.",
+                "The highest mountain known to humans is a mountain on the asteroid Vesta. The mountain on the asteroid is 3 times bigger than Mount Everest."
+              ]
+              function newQuote1() {
+                var randomNumber = Math.floor(Math.random() * (quotes1.length));
+                document.getElementById('sf').innerHTML = quotes1[randomNumber];
+              }
+            </script>
+          </div>
+        </div>
+  
+  
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden " style="width: 50% " >
+          <div class="my-3 p-3">
+            <h2 class="display-1">&nbsp&nbsp&nbsp&nbspAbout Food&nbsp&nbsp&nbsp</h2>
+            <br>
+            <br>
+            <div id="ff" style="height:  5rem;">Fruit-flavored snacks shine because of car wax.</div>
+            <br>
+            <br>
+            <button onclick="newQuote2()" type="button" class="btn btn-warning btn-lg"> More</button>
+            <script>
+              var quotes2 = [
+                'McDonald’s once made bubblegum-flavored broccoli',
+                'Bird’s Saliva Is Actually An Expensive Delicacy',
+                'Chewing Coffee Beans Can Help Eliminate Bad Breath',
+                'Chocolate Is As Healthy As Fruit',
+                'Ranch dressing is dyed.',
+                'One fast-food burger can have meat from 100 different cows.',
+                "Fruit-flavored snacks shine because of car wax."
+  
+              ]
+              function newQuote2() {
+                var randomNumber = Math.floor(Math.random() * (quotes2.length));
+                document.getElementById('ff').innerHTML = quotes2[randomNumber];
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-5 " align="center">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 50% " align="center">
+          <div class="my-3 p-3">
+            <h2 class="display-1">&nbsp&nbspAbout Dreams&nbsp&nbsp</h2>
+            <br>
+            <br>
+            <div id="df" style="height:  5rem;"> You can’t read while dreaming, or tell the time.</div>
+            <br>
+            <br>
+            <button onclick="newQuote3()" type="button" class="btn btn-warning btn-lg"> More</button>
+            <script>
+              var quotes3 = [
+                'The majority of men tend to have all male characters in their dreams. However, when women dream, they have a more even mixture of males and females in their dreams.',
+                'As the brain problem solves during dreams it actually mimics the creative, waking thought process. For this reason, many artists are more likely to be stimulated by their dreams, and think with more creativity while awake.',
+                'Your mind is more active while you are dreaming than when you’re awake.',
+                'Blind people experience more sensory dreams.',
+                'Some people dream only in black and white. Age plays a factor in this phenomenon, as people 25 or younger say they almost never dream in black and white, while people 55 and older claim to dream in color about 75 percent of the time. ',
+                'The most common emotion experienced in dreams is anxiety, and negative emotions, in general, are much more common than positive ones.',
+                "While dreams are often heavily influenced by our personal experiences, researchers have found that certain dream themes are very common across different cultures.",
+                "You can’t read while dreaming, or tell the time.",
+                'Some inventions are inspired by dreams. The idea for Google -Larry Page, Alternating current generator -Tesla, DNA’s double helix spiral form -James Watson. Yes, all of these',
+                'There are some astounding cases where people actually dreamt about things which happened to them later, in the exact same ways they dreamed about. For example, Abraham Lincoln dreamt of His Assassination and many of the victims of 9/11 had dreams warning them about the catastrophe'
+  
+              ]
+              function newQuote3() {
+                var randomNumber = Math.floor(Math.random() * (quotes3.length));
+                document.getElementById('df').innerHTML = quotes3[randomNumber];
+              }
+            </script>
+          </div>
+        </div>
+  
+  
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden " style="width: 50% " align="center">
+          <div class="my-3 py-3">
+            <h2 class="display-1">&nbsp&nbsp&nbsp &nbspAbout Space&nbsp&nbsp&nbsp</h2>
+            <br>
+            <br>
+            <div id="ef" style="height:  5rem;">Neutron stars can spin 600 times per second.</div>
+            <br>
+            <br>
+            <button onclick="newQuote4()" type="button" class="btn btn-warning btn-lg"> More</button>
+            <script>
+              var quotes4 = [
+                'SPACE IS COMPLETELY SILENT. There is no atmosphere in space, which means that sound has no medium or way to travel to be heard.',
+                'THE HOTTEST PLANET IN OUR SOLAR SYSTEM IS 450° C',
+                'Venus spins clockwise. It’s the only planet that does!',
+                'A FULL NASA SPACE SUIT COSTS $12,000,000.',
+                'The Sun is large enough that approximately 1.3 million Earths could fit inside (if squashed in) or if the Earths retained their spherical shape then 960,000 would fit.',
+                'There are about three trillion trees on Planet Earth, and between 100-400 billion stars, approximately, in the galaxy.',
+                "ONE DAY ON VENUS IS LONGER THAN ONE YEAR.",
+                "There’s a planet made of diamonds twice the size of earth The 'super earth' aka 55 Cancri e, is most likely covered in graphite and diamond.",
+                'An effect known as cold welding, if two pieces of the same metal material touch in space, they will be pulled together to form one object. ',
+                'Saturn’s less dense than water which means that if put in a very large bowl of water, it would float.',
+                "Neutron stars can spin 600 times per second."
+  
+              ]
+              function newQuote4() {
+                var randomNumber = Math.floor(Math.random() * (quotes4.length));
+                document.getElementById('ef').innerHTML = quotes4[randomNumber];
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+    </main>
+  
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+  
+  
+    <!-- Optional JavaScript; choose one of the two! -->
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        
 
-
-  </main>
-
-  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
-
-
-
-
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
 </body>
-{% endblock %}
+
+</html>
